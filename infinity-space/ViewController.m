@@ -43,6 +43,7 @@
 - (IBAction)sendMessage:(id)sender {
     if (self.messageTextField.text.length > 0) {
         [WebSocketManager.shared send:self.messageTextField.text];
+        self.messageTextField.text = @"";
     }
 }
 
