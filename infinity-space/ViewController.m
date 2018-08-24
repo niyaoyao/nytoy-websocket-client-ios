@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *messageTextField;
+@property (weak, nonatomic) IBOutlet UITextField *nicknameTextField;
 
 @end
 
@@ -21,7 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     ConsoleLog(@"test");
     WebSocketConfiguration *configuration = [[WebSocketConfiguration alloc] init];
-    configuration.hostUrl = @"ws://10.1.3.43:23333";
+    configuration.hostUrl = @"ws://192.168.1.106:23333";
     [WebSocketManager setup:configuration];
     [WebSocketManager start];
     
@@ -41,8 +42,20 @@
 }
 
 - (IBAction)sendMessage:(id)sender {
-    if (self.messageTextField.text.length > 0) {
-        [WebSocketManager.shared send:self.messageTextField.text];
+    [self resignKeyboard];
+    if (self.messageTextField.text.length > 0 && self.nicknameTextField.text.length > 0) {
+        NSDictionary *messageDic = @{
+                              @"content": self.messageTextField.text,
+                              @"nickname":self.nicknameTextField.text
+                              };
+        NSError *error = nil;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject: messageDic
+                                                           options:NSJSONWritingPrettyPrinted
+                                                             error:&error];
+        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        NSLog(@"JSON Output: %@", jsonString);
+        
+        [WebSocketManager.shared send:jsonString];
         self.messageTextField.text = @"";
     }
 }

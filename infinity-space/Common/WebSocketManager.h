@@ -17,7 +17,13 @@
 
 #endif
 
+typedef NS_ENUM(NSInteger, WebSocketStatus) {
+    WebSocketStatusOpen,
+    WebSocketStatusClosed,
+};
+
 @interface WebSocketManager : NSObject
+@property (nonatomic, assign, readonly) WebSocketStatus status;
 
 + (instancetype)shared;
 + (void)setup:(WebSocketConfiguration *)configuration;

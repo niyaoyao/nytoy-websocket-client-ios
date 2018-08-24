@@ -131,6 +131,13 @@ static const uint64_t heartBeatInterval = 60 * 3;
     }
 }
 
+- (void)sendData:(NSData *)jsonData; {
+    ConsoleLog(@"Send: %@", jsonData);
+    if (self.wsClient.readyState == SR_OPEN) {
+        [self.wsClient send:jsonData];
+    }
+}
+
 - (void)reconnect {
     self.wsClient.delegate = nil;
     [self.wsClient close];
