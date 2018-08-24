@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C61ABF2212FCA8D00740D84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C61ABF1212FCA8D00740D84 /* AppDelegate.m */; };
+		8C61ABF5212FCA8D00740D84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C61ABF4212FCA8D00740D84 /* ViewController.m */; };
+		8C61ABF8212FCA8D00740D84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C61ABF6212FCA8D00740D84 /* Main.storyboard */; };
+		8C61ABFA212FCA8F00740D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C61ABF9212FCA8F00740D84 /* Assets.xcassets */; };
+		8C61ABFD212FCA8F00740D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C61ABFB212FCA8F00740D84 /* LaunchScreen.storyboard */; };
+		8C61AC00212FCA8F00740D84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C61ABFF212FCA8F00740D84 /* main.m */; };
+		8C61AC0A212FCA8F00740D84 /* infinity_spaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C61AC09212FCA8F00740D84 /* infinity_spaceTests.m */; };
+		8C61AC15212FCA8F00740D84 /* infinity_spaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C61AC14212FCA8F00740D84 /* infinity_spaceUITests.m */; };
+		8C61AC25212FDF3C00740D84 /* WebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C61AC24212FDF3C00740D84 /* WebSocketManager.m */; };
+		8C61AC28212FE1A700740D84 /* WebSocketConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C61AC27212FE1A700740D84 /* WebSocketConfiguration.m */; };
+		D07E00526C345B33CFC04EFA /* Pods_infinity_space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC22AF6BB3CE472AE5DC53A /* Pods_infinity_space.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C61AC06212FCA8F00740D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C61ABE5212FCA8D00740D84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C61ABEC212FCA8D00740D84;
+			remoteInfo = "infinity-space";
+		};
+		8C61AC11212FCA8F00740D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C61ABE5212FCA8D00740D84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C61ABEC212FCA8D00740D84;
+			remoteInfo = "infinity-space";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DC22AF6BB3CE472AE5DC53A /* Pods_infinity_space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_infinity_space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C61ABED212FCA8D00740D84 /* infinity-space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "infinity-space.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C61ABF0212FCA8D00740D84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C61ABF1212FCA8D00740D84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C61ABF3212FCA8D00740D84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8C61ABF4212FCA8D00740D84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8C61ABF7212FCA8D00740D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C61ABF9212FCA8F00740D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C61ABFC212FCA8F00740D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C61ABFE212FCA8F00740D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C61ABFF212FCA8F00740D84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C61AC05212FCA8F00740D84 /* infinity-spaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "infinity-spaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C61AC09212FCA8F00740D84 /* infinity_spaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = infinity_spaceTests.m; sourceTree = "<group>"; };
+		8C61AC0B212FCA8F00740D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C61AC10212FCA8F00740D84 /* infinity-spaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "infinity-spaceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C61AC14212FCA8F00740D84 /* infinity_spaceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = infinity_spaceUITests.m; sourceTree = "<group>"; };
+		8C61AC16212FCA8F00740D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C61AC23212FDF3C00740D84 /* WebSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebSocketManager.h; sourceTree = "<group>"; };
+		8C61AC24212FDF3C00740D84 /* WebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSocketManager.m; sourceTree = "<group>"; };
+		8C61AC26212FE1A700740D84 /* WebSocketConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebSocketConfiguration.h; sourceTree = "<group>"; };
+		8C61AC27212FE1A700740D84 /* WebSocketConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSocketConfiguration.m; sourceTree = "<group>"; };
+		B2CCACD9072107E84418C0CC /* Pods-infinity-space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-infinity-space.release.xcconfig"; path = "Pods/Target Support Files/Pods-infinity-space/Pods-infinity-space.release.xcconfig"; sourceTree = "<group>"; };
+		D3B00F1E684906CD6B4D8E07 /* Pods-infinity-space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-infinity-space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-infinity-space/Pods-infinity-space.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C61ABEA212FCA8D00740D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07E00526C345B33CFC04EFA /* Pods_infinity_space.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C61AC02212FCA8F00740D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C61AC0D212FCA8F00740D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46DD8368CCBFFCB794655C86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3B00F1E684906CD6B4D8E07 /* Pods-infinity-space.debug.xcconfig */,
+				B2CCACD9072107E84418C0CC /* Pods-infinity-space.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C61ABE4212FCA8D00740D84 = {
+			isa = PBXGroup;
+			children = (
+				8C61ABEF212FCA8D00740D84 /* infinity-space */,
+				8C61AC08212FCA8F00740D84 /* infinity-spaceTests */,
+				8C61AC13212FCA8F00740D84 /* infinity-spaceUITests */,
+				8C61ABEE212FCA8D00740D84 /* Products */,
+				46DD8368CCBFFCB794655C86 /* Pods */,
+				F299FC1A743BE6E502893CC4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C61ABEE212FCA8D00740D84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C61ABED212FCA8D00740D84 /* infinity-space.app */,
+				8C61AC05212FCA8F00740D84 /* infinity-spaceTests.xctest */,
+				8C61AC10212FCA8F00740D84 /* infinity-spaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C61ABEF212FCA8D00740D84 /* infinity-space */ = {
+			isa = PBXGroup;
+			children = (
+				8C61AC22212FDF1F00740D84 /* Common */,
+				8C61ABF0212FCA8D00740D84 /* AppDelegate.h */,
+				8C61ABF1212FCA8D00740D84 /* AppDelegate.m */,
+				8C61ABF3212FCA8D00740D84 /* ViewController.h */,
+				8C61ABF4212FCA8D00740D84 /* ViewController.m */,
+				8C61ABF6212FCA8D00740D84 /* Main.storyboard */,
+				8C61ABF9212FCA8F00740D84 /* Assets.xcassets */,
+				8C61ABFB212FCA8F00740D84 /* LaunchScreen.storyboard */,
+				8C61ABFE212FCA8F00740D84 /* Info.plist */,
+				8C61ABFF212FCA8F00740D84 /* main.m */,
+			);
+			path = "infinity-space";
+			sourceTree = "<group>";
+		};
+		8C61AC08212FCA8F00740D84 /* infinity-spaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C61AC09212FCA8F00740D84 /* infinity_spaceTests.m */,
+				8C61AC0B212FCA8F00740D84 /* Info.plist */,
+			);
+			path = "infinity-spaceTests";
+			sourceTree = "<group>";
+		};
+		8C61AC13212FCA8F00740D84 /* infinity-spaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C61AC14212FCA8F00740D84 /* infinity_spaceUITests.m */,
+				8C61AC16212FCA8F00740D84 /* Info.plist */,
+			);
+			path = "infinity-spaceUITests";
+			sourceTree = "<group>";
+		};
+		8C61AC22212FDF1F00740D84 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8C61AC23212FDF3C00740D84 /* WebSocketManager.h */,
+				8C61AC24212FDF3C00740D84 /* WebSocketManager.m */,
+				8C61AC26212FE1A700740D84 /* WebSocketConfiguration.h */,
+				8C61AC27212FE1A700740D84 /* WebSocketConfiguration.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F299FC1A743BE6E502893CC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DC22AF6BB3CE472AE5DC53A /* Pods_infinity_space.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C61ABEC212FCA8D00740D84 /* infinity-space */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C61AC19212FCA8F00740D84 /* Build configuration list for PBXNativeTarget "infinity-space" */;
+			buildPhases = (
+				0D6EF53D78CD3091DD813DF9 /* [CP] Check Pods Manifest.lock */,
+				8C61ABE9212FCA8D00740D84 /* Sources */,
+				8C61ABEA212FCA8D00740D84 /* Frameworks */,
+				8C61ABEB212FCA8D00740D84 /* Resources */,
+				2E7692E7E58189D34F51A3A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "infinity-space";
+			productName = "infinity-space";
+			productReference = 8C61ABED212FCA8D00740D84 /* infinity-space.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C61AC04212FCA8F00740D84 /* infinity-spaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C61AC1C212FCA8F00740D84 /* Build configuration list for PBXNativeTarget "infinity-spaceTests" */;
+			buildPhases = (
+				8C61AC01212FCA8F00740D84 /* Sources */,
+				8C61AC02212FCA8F00740D84 /* Frameworks */,
+				8C61AC03212FCA8F00740D84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C61AC07212FCA8F00740D84 /* PBXTargetDependency */,
+			);
+			name = "infinity-spaceTests";
+			productName = "infinity-spaceTests";
+			productReference = 8C61AC05212FCA8F00740D84 /* infinity-spaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C61AC0F212FCA8F00740D84 /* infinity-spaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C61AC1F212FCA8F00740D84 /* Build configuration list for PBXNativeTarget "infinity-spaceUITests" */;
+			buildPhases = (
+				8C61AC0C212FCA8F00740D84 /* Sources */,
+				8C61AC0D212FCA8F00740D84 /* Frameworks */,
+				8C61AC0E212FCA8F00740D84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C61AC12212FCA8F00740D84 /* PBXTargetDependency */,
+			);
+			name = "infinity-spaceUITests";
+			productName = "infinity-spaceUITests";
+			productReference = 8C61AC10212FCA8F00740D84 /* infinity-spaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C61ABE5212FCA8D00740D84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = dourui;
+				TargetAttributes = {
+					8C61ABEC212FCA8D00740D84 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8C61AC04212FCA8F00740D84 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8C61ABEC212FCA8D00740D84;
+					};
+					8C61AC0F212FCA8F00740D84 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8C61ABEC212FCA8D00740D84;
+					};
+				};
+			};
+			buildConfigurationList = 8C61ABE8212FCA8D00740D84 /* Build configuration list for PBXProject "infinity-space" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C61ABE4212FCA8D00740D84;
+			productRefGroup = 8C61ABEE212FCA8D00740D84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C61ABEC212FCA8D00740D84 /* infinity-space */,
+				8C61AC04212FCA8F00740D84 /* infinity-spaceTests */,
+				8C61AC0F212FCA8F00740D84 /* infinity-spaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C61ABEB212FCA8D00740D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C61ABFD212FCA8F00740D84 /* LaunchScreen.storyboard in Resources */,
+				8C61ABFA212FCA8F00740D84 /* Assets.xcassets in Resources */,
+				8C61ABF8212FCA8D00740D84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C61AC03212FCA8F00740D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C61AC0E212FCA8F00740D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D6EF53D78CD3091DD813DF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-infinity-space-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E7692E7E58189D34F51A3A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-infinity-space/Pods-infinity-space-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-infinity-space/Pods-infinity-space-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C61ABE9212FCA8D00740D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C61ABF5212FCA8D00740D84 /* ViewController.m in Sources */,
+				8C61AC28212FE1A700740D84 /* WebSocketConfiguration.m in Sources */,
+				8C61AC00212FCA8F00740D84 /* main.m in Sources */,
+				8C61ABF2212FCA8D00740D84 /* AppDelegate.m in Sources */,
+				8C61AC25212FDF3C00740D84 /* WebSocketManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C61AC01212FCA8F00740D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C61AC0A212FCA8F00740D84 /* infinity_spaceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C61AC0C212FCA8F00740D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C61AC15212FCA8F00740D84 /* infinity_spaceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C61AC07212FCA8F00740D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C61ABEC212FCA8D00740D84 /* infinity-space */;
+			targetProxy = 8C61AC06212FCA8F00740D84 /* PBXContainerItemProxy */;
+		};
+		8C61AC12212FCA8F00740D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C61ABEC212FCA8D00740D84 /* infinity-space */;
+			targetProxy = 8C61AC11212FCA8F00740D84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C61ABF6212FCA8D00740D84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C61ABF7212FCA8D00740D84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C61ABFB212FCA8F00740D84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C61ABFC212FCA8F00740D84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C61AC17212FCA8F00740D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C61AC18212FCA8F00740D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C61AC1A212FCA8F00740D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B00F1E684906CD6B4D8E07 /* Pods-infinity-space.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BXSTS7H5E;
+				INFOPLIST_FILE = "infinity-space/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "group.dourui.infinity-space";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C61AC1B212FCA8F00740D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2CCACD9072107E84418C0CC /* Pods-infinity-space.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BXSTS7H5E;
+				INFOPLIST_FILE = "infinity-space/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "group.dourui.infinity-space";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C61AC1D212FCA8F00740D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "infinity-spaceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "group.dourui.infinity-spaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/infinity-space.app/infinity-space";
+			};
+			name = Debug;
+		};
+		8C61AC1E212FCA8F00740D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "infinity-spaceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "group.dourui.infinity-spaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/infinity-space.app/infinity-space";
+			};
+			name = Release;
+		};
+		8C61AC20212FCA8F00740D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "infinity-spaceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "group.dourui.infinity-spaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "infinity-space";
+			};
+			name = Debug;
+		};
+		8C61AC21212FCA8F00740D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "infinity-spaceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "group.dourui.infinity-spaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "infinity-space";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C61ABE8212FCA8D00740D84 /* Build configuration list for PBXProject "infinity-space" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C61AC17212FCA8F00740D84 /* Debug */,
+				8C61AC18212FCA8F00740D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C61AC19212FCA8F00740D84 /* Build configuration list for PBXNativeTarget "infinity-space" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C61AC1A212FCA8F00740D84 /* Debug */,
+				8C61AC1B212FCA8F00740D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C61AC1C212FCA8F00740D84 /* Build configuration list for PBXNativeTarget "infinity-spaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C61AC1D212FCA8F00740D84 /* Debug */,
+				8C61AC1E212FCA8F00740D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C61AC1F212FCA8F00740D84 /* Build configuration list for PBXNativeTarget "infinity-spaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C61AC20212FCA8F00740D84 /* Debug */,
+				8C61AC21212FCA8F00740D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C61ABE5212FCA8D00740D84 /* Project object */;
+}
