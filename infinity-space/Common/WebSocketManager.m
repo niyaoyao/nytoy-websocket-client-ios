@@ -46,26 +46,44 @@ static const uint64_t heartBeatInterval = 60 * 3;
 #pragma mark - SRWebSocketDelegate
 - (void)webSocketDidOpen:(SRWebSocket *)webSocket {
     ConsoleLog(@"WebSocketDidOpen: %@", self.hostURL);
+    if ([self.delegate respondsToSelector:@selector(webSocketDidOpen)]) {
+        [self.delegate webSocketDidOpen];
+    }
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceivePong:(NSData *)pongPayload {
     ConsoleLog(@"WebSocket didReceivePong: %@", pongPayload);
+    if ([self.delegate respondsToSelector:@selector(webSocketDidReceivePong:)]) {
+        [self.delegate webSocketDidReceivePong:pongPayload];
+    }
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error {
     ConsoleLog(@"WebSocket didFailWithError: %@", error);
+    if ([self.delegate respondsToSelector:@selector(webSocketDidFailWithError:)]) {
+        [self.delegate webSocketDidFailWithError:error];
+    }
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
     ConsoleLog(@"WebSocket didReceiveMessage: %@", message);
+    if ([self.delegate respondsToSelector:@selector(webSocketDidReceiveMessage:)]) {
+        [self.delegate webSocketDidReceiveMessage:message];
+    }
 }
 
 - (BOOL)webSocketShouldConvertTextFrameToString:(SRWebSocket *)webSocket {
+    if ([self.delegate respondsToSelector:@selector(webSocketShouldConvertTextFrameToString)]) {
+        return [self.delegate webSocketShouldConvertTextFrameToString];
+    }
     return YES;
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean {
     ConsoleLog(@"WebSocket didCloseWithCode: %ld \nreason:%@ \nwasClean:%d", (long)code, reason, wasClean);
+    if ([self.delegate respondsToSelector:@selector(webSocketDidCloseWithCode:reason:wasClean:)]) {
+        [self.delegate webSocketDidCloseWithCode:code reason:reason wasClean:wasClean];
+    }
 }
 
 #pragma mark - Private
@@ -107,6 +125,21 @@ static const uint64_t heartBeatInterval = 60 * 3;
 - (void)sendHeartBeat {
     if (self.wsClient.readyState == SR_OPEN) {
         [self.wsClient sendPing:nil];
+    }
+}
+
+#pragma mark - Getter
+- (WebSocketStatus)status {
+    switch (self.wsClient.readyState) {
+        case SR_OPEN:
+            return WebSocketStatusOpen;
+            break;
+        case  SR_CLOSED:
+            return WebSocketStatusClosed;
+            break;
+        default:
+            return WebSocketStatusUnknown;
+            break;
     }
 }
 

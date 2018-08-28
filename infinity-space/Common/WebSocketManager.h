@@ -18,12 +18,28 @@
 #endif
 
 typedef NS_ENUM(NSInteger, WebSocketStatus) {
+    WebSocketStatusUnknown = -1,
     WebSocketStatusOpen,
     WebSocketStatusClosed,
 };
 
+@protocol WebSocketManagerDelegate <NSObject>
+
+- (void)webSocketDidReceiveMessage:(id)message;
+
+@optional
+
+- (void)webSocketDidOpen;
+- (void)webSocketDidFailWithError:(NSError *)error;
+- (void)webSocketDidCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean;
+- (void)webSocketDidReceivePong:(NSData *)pongPayload;
+- (BOOL)webSocketShouldConvertTextFrameToString;
+
+@end
+
 @interface WebSocketManager : NSObject
 @property (nonatomic, assign, readonly) WebSocketStatus status;
+@property (nonatomic, weak) id<WebSocketManagerDelegate> delegate;
 
 + (instancetype)shared;
 + (void)setup:(WebSocketConfiguration *)configuration;
